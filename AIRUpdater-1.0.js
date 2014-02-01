@@ -22,7 +22,7 @@ var AIRUpdater = function () {
 			<releasenotes>Added automatic update downloading feature.</releasenotes>
 		</application>
 	*/
-	var latestVersionCheckUrl = "http://www.myapp.com/versioning.xml";
+	var latestVersionCheckUrl = "https://raw.github.com/aruizca/iview-desktop/master/versioning.xml";
 	var updateAvailable = null;
 	var updateAvailableDialog = null;
 	var releaseNotes = null;
@@ -32,7 +32,7 @@ var AIRUpdater = function () {
 		and ".air" extension will automatically be added; version taken 
 		from the XML value found in the latestVersionCheckUrl page
 	*/	
-	var updaterUrl = "http://myapp.googlecode.com/files/myapp-";
+	var updaterUrl = "https://github.com/aruizca/iview-desktop/raw/master/builds/iView-Desktop-";
 	var stream = null;
 	var updateFile = null;
 	
