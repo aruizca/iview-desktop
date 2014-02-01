@@ -4,7 +4,7 @@
 */	
 var AIRUpdater = function () {
 	// This is only used for the filename of the installer
-	var applicationName = "MyApp.air";
+	var applicationName = "iView-Desktop.air";
 	var applicationVersion = 0;
 	var latestVersion = 0;
 	/*
