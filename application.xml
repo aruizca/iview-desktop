@@ -2,7 +2,7 @@
 <application xmlns="http://ns.adobe.com/air/application/3.7">
 	<id>iViewDesktop</id>
 	<name>iView - Desktop</name>
-	<filename>iViewDesktop</filename>
+	<filename>iView-Desktop</filename>
 	<versionNumber>1.0.0</versionNumber>
 	<installFolder>iView-Desktop</installFolder>
 	<initialWindow>
