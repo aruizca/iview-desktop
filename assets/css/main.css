@@ -21,6 +21,10 @@ div.snapshot img {
     margin-bottom: 2em;
 }
 
+#snapshot {
+    cursor: zoom-in;
+}
+
 .vcenter {
     display: inline-block;
     vertical-align: middle;
