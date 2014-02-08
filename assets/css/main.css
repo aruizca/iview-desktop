@@ -31,6 +31,19 @@ div.snapshot img {
     float: none;
 }
 
+.navbar-brand {
+    float: none;
+    color: white !important;
+}
+
+.navbar-brand > img {
+    padding-right: .8em;
+}
+
+.brand-with-logo {
+    margin-top: .7em;
+}
+
 
 /**********************************/
 
