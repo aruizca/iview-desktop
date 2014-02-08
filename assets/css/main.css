@@ -44,6 +44,35 @@ div.snapshot img {
     margin-top: .7em;
 }
 
+i.adobe-air {
+    display: inline-block;
+    line-height: 1;
+    width: 25px;
+    height: 25px;
+    background: url("../img/adobe-air-icon.png") no-repeat 0 ;
+}
+
+p#platforms {
+    text-align: center;
+    margin-left: -1em;
+}
+
+p#platforms i {
+    margin-right: .8em;
+}
+
+i.windows {
+    color: #04AAE6;
+}
+
+i.android {
+    color: #99CC00;
+}
+
+i.apple {
+    color: #A8B1B8;
+}
+
 
 /**********************************/
 
