@@ -8,7 +8,8 @@
   <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" type="text/css">
   <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   <link href="//cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/0.9.9/magnific-popup.css" rel="stylesheet" type="text/css">
-  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/layout.css" rel="stylesheet" type="text/css">
+  <link href="assets/css/main.css" rel="stylesheet" type="text/css">
 
   <!-- SWFObject embed by Geoff Stearns geoff@deconcept.com http://blog.deconcept.com/swfobject/ -->
   <script src="badge/swfobject.js"></script>
@@ -20,100 +21,121 @@
 
 </head>
 <body>
-<!-- BEGIN EMBED CODE -->
+<div class="wrapper">
+  <!-- BEGIN EMBED CODE -->
 
-<!-- IMPORTANT: Make sure you also copy the swfobject script tag from the head above -->
-<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <!-- You'll want to use a responsive image option so this logo looks good on devices - I recommend using something like retina.js (do a quick Google search for it and you'll find it) -->
-      <div class="vcenter brand-with-logo">
-        <a class="navbar-brand" href="index.html">
-          <img src="assets/img/iview32.png" title="logo">ABC iView - Desktop
-        </a>
-      </div>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse navbar-ex1-collapse">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="http://aruizca.com/abc-iview-desktop-using-adobe-air-to-wrap-your-web-applications-as-a-cross-platform-desktop-application/" target="_blank">About</a>
-        </li>
-        <li><a href="mailto:aruizca@gmail.com">Contact</a>
-        </li>
-      </ul>
-    </div>
-    <!-- /.navbar-collapse -->
-  </div>
-  <!-- /.container -->
-</nav>
-
-<div class="section">
-
-  <div class="container">
-
-    <div class="row snapshot">
-      <div class="col-sm-offset-1 col-sm-3 vcenter">
-        <div id="flashcontent">
-          <strong>Please upgrade your Flash Player</strong>
-          This is the content that would be shown if the user does not have Flash Player 6.0.65 or higher installed.
+  <!-- IMPORTANT: Make sure you also copy the swfobject script tag from the head above -->
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <!-- You'll want to use a responsive image option so this logo looks good on devices - I recommend using something like retina.js (do a quick Google search for it and you'll find it) -->
+        <div class="vcenter brand-with-logo">
+          <a class="navbar-brand" href="index.html">
+            <img src="assets/img/iview32.png" title="logo">ABC iView - Desktop
+          </a>
         </div>
       </div>
-      <div class="col-sm-6 vcenter">
-        <a class="image-popup-no-margins" id="snapshot" href="assets/img/iview-desktop-snapshot.png">
-        <img src="assets/img/iview-desktop-snapshot.png" class="img-responsive"/>
-        </a>
-      </div>
-    </div>
 
-    <div class="row">
-      <div class="col-lg-4 col-md-4">
-        <h3><i class="fa fa-desktop fa-fw"></i> Desktop friendly</h3>
-        <p>This app offers the ABC iView web app you love, wrapped to behave like a desktop application. Mainly for those who prefer to open a <a href="http://en.wikipedia.org/wiki/Single-page_application" target="_blank">SPI</a> web app without opening the browser.</p>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="http://aruizca.com/abc-iview-desktop-using-adobe-air-to-wrap-your-web-applications-as-a-cross-platform-desktop-application/"
+               target="_blank">About</a>
+          </li>
+          <li><a href="mailto:aruizca@gmail.com">Contact</a>
+          </li>
+        </ul>
       </div>
-      <div class="col-lg-4 col-md-4">
-        <h3><i class="adobe-air"></i> Wrapped with Adobe Air</h3>
-        <p>This is the simplest platform to turn any <a href="http://en.wikipedia.org/wiki/Single-page_application" target="_blank">SPI</a> web application into a Desktop application for most of the available platforms (<a href="http://aruizca.com/abc-iview-desktop-using-adobe-air-to-wrap-your-web-applications-as-a-cross-platform-desktop-application/#linux-support-info" target="_blank" title="Adobe Air Linux support info">not linux any more...unfortunately</a>):</p>
-        <p id="platforms"><i title="windows" class="fa fa-windows fa-2x fa-fw windows"></i> <i title="android" class="fa fa-android fa-2x fa-fw android"></i> <i title="ios and macos" class="fa fa-apple fa-2x fa-fw apple"></i></p>
-      </div>
-      <div class="col-lg-4 col-md-4">
-        <h3><i class="fa fa-cog fa-fw"></i> Ready to run anywhere</h3>
-        <p>Just click on the "Install Now" badge above and it should install the app seamlessly. In case it does not work, you can install the runtime <a href="https://get.adobe.com/air/" target="_blank" title="Adobe Air Runtime installation">here</a> and the app <a href="https://github.com/aruizca/iview-desktop/raw/master/builds/iView-Desktop-latest.air" title="ABC iView Desktop installation file" target="_blank">here</a>.</p>
-      </div>
+      <!-- /.navbar-collapse -->
     </div>
-    <!-- /.row -->
+    <!-- /.container -->
+  </nav>
+
+  <div class="section">
+
+    <div class="container">
+
+      <div class="row snapshot">
+        <div class="col-sm-offset-1 col-sm-3 vcenter">
+          <div id="flashcontent">
+            <strong>Please upgrade your Flash Player</strong>
+            This is the content that would be shown if the user does not have Flash Player 6.0.65 or higher installed.
+          </div>
+        </div>
+        <div class="col-sm-6 vcenter">
+          <a class="image-popup-no-margins" id="snapshot" href="assets/img/iview-desktop-snapshot.png">
+            <img src="assets/img/iview-desktop-snapshot.png" class="img-responsive"/>
+          </a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4 col-md-4">
+          <h3><i class="fa fa-desktop fa-fw"></i> Desktop friendly</h3>
+
+          <p>This app offers the ABC iView web app you love, wrapped to behave like a desktop application. Mainly for
+            those who prefer to open a <a href="http://en.wikipedia.org/wiki/Single-page_application" target="_blank">SPI</a>
+            web app without opening the browser.</p>
+        </div>
+        <div class="col-lg-4 col-md-4">
+          <h3><i class="adobe-air"></i> Wrapped with Adobe Air</h3>
+
+          <p>This is the simplest platform to turn any <a href="http://en.wikipedia.org/wiki/Single-page_application"
+                                                          target="_blank">SPI</a> web application into a Desktop
+            application for most of the available platforms (<a
+                    href="http://aruizca.com/abc-iview-desktop-using-adobe-air-to-wrap-your-web-applications-as-a-cross-platform-desktop-application/#linux-support-info"
+                    target="_blank" title="Adobe Air Linux support info">not linux anymore...unfortunately</a>):</p>
+
+          <p id="platforms"><i title="windows" class="fa fa-windows fa-2x fa-fw windows"></i> <i title="android"
+                                                                                                 class="fa fa-android fa-2x fa-fw android"></i>
+            <i title="ios and osx" class="fa fa-apple fa-2x fa-fw apple"></i></p>
+        </div>
+        <div class="col-lg-4 col-md-4">
+          <h3><i class="fa fa-cog fa-fw"></i> Ready to install and run</h3>
+
+          <p>Just click on the "Install Now" badge above and it should install the app and the runtime seamlessly. In
+            case it does not work, you can install the runtime <a href="https://get.adobe.com/air/" target="_blank"
+                                                                  title="Adobe Air Runtime installation">here</a> and
+            the app <a href="https://github.com/aruizca/iview-desktop/raw/master/builds/iView-Desktop-latest.air"
+                       title="ABC iView Desktop installation file" target="_blank">here</a>.</p>
+        </div>
+      </div>
+      <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
 
   </div>
-  <!-- /.container -->
-
+  <!-- /.section -->
+  <div class="push"></div>
 </div>
-<!-- /.section -->
+<div class="footer">
+  <div class="section-colored text-center">
 
-<div class="section-colored text-center">
+    <div class="container">
 
-  <div class="container">
-
-    <div class="row">
-      <div class="col-lg-12">
-        <h2>Modern Business: A Clean &amp; Simple Full Website Template by Start Bootstrap</h2>
-        <p>A complete website design featuring various single page templates from Start Bootstraps library of free HTML starter templates.</p>
-        <hr>
+      <div class="row">
+        <div class="col-lg-12">
+          <h2>Modern Business: A Clean &amp; Simple Full Website Template by Start Bootstrap</h2>
+          <p>A complete website design featuring various single page templates from Start Bootstraps library of free HTML starter templates.</p>
+          <hr>
+        </div>
       </div>
+      <!-- /.row -->
+
     </div>
-    <!-- /.row -->
+    <!-- /.container -->
 
   </div>
-  <!-- /.container -->
-
+  <!-- /.section-colored -->
 </div>
-<!-- /.section-colored -->
-
 
 <script type="text/javascript">
   // <![CDATA[
