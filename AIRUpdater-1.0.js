@@ -40,7 +40,8 @@ var AIRUpdater = function () {
 		// This will get the version of the currently installed application
 		var appXML = air.NativeApplication.nativeApplication.applicationDescriptor;
 		var xmlObject = new DOMParser().parseFromString(appXML, "text/xml");
-		applicationVersion = parseFloat(xmlObject.getElementsByTagName('version')[0].firstChild.nodeValue);
+		applicationVersion = parseFloat(xmlObject.getElementsByTagName('versionNumber')[0].firstChild.nodeValue);
+        air.trace(xmlObject.getElementsByTagName('versionNumber')[0].firstChild.nodeValue);
 	};
 	
 	var getLatestVersion = function () {
@@ -52,23 +53,25 @@ var AIRUpdater = function () {
 		XMLHttp.onreadystatechange = function () {
 			if (XMLHttp.readyState === 4) {
 				var response = XMLHttp.responseXML;
-				var releaseNotesNode = response.getElementsByTagName("releasenotes")[0];
-				/*
-					Adds a reference to a releaseNote for the latest version, 
-					IF a <releasenotes> node exists
-				*/
-				if (typeof releaseNotesNode === "object" && releaseNotesNode.firstChild) {
-					releaseNotesText = releaseNotesNode.firstChild.nodeValue;
-				}
-				var latestVersionNode = response.getElementsByTagName("latestversion")[0];
-				/*
-					Triggers a version comparison with the existing installed application, 
-					IF a <latestversion> node exists
-				*/	
-				if (typeof latestVersionNode === "object" && latestVersionNode.firstChild) {
-					latestVersion = parseFloat(latestVersionNode.firstChild.nodeValue, 10);
-					compareVersions();
-				}
+                if (response) {
+                    var releaseNotesNode = response.getElementsByTagName("releasenotes")[0];
+                    /*
+                        Adds a reference to a releaseNote for the latest version,
+                        IF a <releasenotes> node exists
+                    */
+                    if (typeof releaseNotesNode === "object" && releaseNotesNode.firstChild) {
+                        releaseNotesText = releaseNotesNode.firstChild.nodeValue;
+                    }
+                    var latestVersionNode = response.getElementsByTagName("latestversion")[0];
+                    /*
+                        Triggers a version comparison with the existing installed application,
+                        IF a <latestversion> node exists
+                    */
+                    if (typeof latestVersionNode === "object" && latestVersionNode.firstChild) {
+                        latestVersion = parseFloat(latestVersionNode.firstChild.nodeValue, 10);
+                        compareVersions();
+                    }
+                }
 			}
 		};
 		XMLHttp.open("GET", latestVersionCheckUrl, true);
